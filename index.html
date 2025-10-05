@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Latest Games</title>
+
+  <!-- ✅ Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ✅ Шрифт Jersey 10 -->
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+  <style>
+    .font-jersey { font-family: 'Jersey 10', sans-serif; }
+  </style>
+</head>
+
+<body class="bg-black text-white">
+
+
+  <div class="w-full min-h-screen pt-20 bg-[url('/images/game.png')] bg-cover bg-center">
+
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 px-4">
+      <img src="/images/light.png" alt="light" class="w-20 h-20 sm:w-[120px] sm:h-[120px] object-contain">
+      <h1 class="text-4xl sm:text-7xl font-jersey text-center">LATEST GAMES</h1>
+    </div>
+
+    
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-[50px] mt-10 px-4">
+      <div class="w-[200px] sm:w-[240px] h-[240px] sm:h-[280px]">
+        <img src="/images/gradient1.png" alt="gradient1" class="w-full h-full object-cover rounded-xl">
+      </div>
+
+      <div class="w-[260px] sm:w-[320px] h-[300px] sm:h-[360px] transition-transform duration-300 ease-out hover:scale-105">
+        <img src="/images/gradient2.png" alt="gradient2" class="w-full h-full object-cover rounded-xl">
+      </div>
+
+      <div class="w-[200px] sm:w-[240px] h-[240px] sm:h-[280px]">
+        <img src="/images/gradient3.png" alt="gradient3" class="w-full h-full object-cover rounded-xl">
+      </div>
+    </div>
+
+  
+    <div class="flex flex-col sm:flex-row items-center mr-100 justify-center gap-4 sm:gap-8 mt-10 px-4">
+      <img src="/images/locked.png" alt="lock" class="w-[40px] h-[40px] hidden sm:block">
+      
+      <div class="flex flex-col items-center gap-4">
+        <a href="/images/games/GalamFarm_Installer.exe" download>
+          <button class="text-white border border-white rounded-3xl w-[220px] sm:w-[240px] h-10 hover:shadow-[0_0_10px_white] hover:scale-105 transition-all duration-300 ease-out">
+            DOWNLOAD FOR PC
+          </button>
+        </a>
+        <a href="/images/games/GalamFarm.apk" download>
+          <button class="text-white border border-white rounded-3xl w-[240px] sm:w-[260px] h-10 hover:shadow-[0_0_10px_white] hover:scale-105 transition-all duration-300 ease-out">
+            DOWNLOAD FOR ANDROID
+          </button>
+        </a>
+      </div>
+
+      <img src="/images/locked.png" alt="lock" class="w-[40px] h-[40px] hidden sm:block">
+    </div>
+
+  </div>
+
+</body>
+</html>
